@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkantoreact=self.webpackChunkantoreact||[]).push([[341],{341:function(e,n,t){t.r(n);var a=t(184);n.default=function(){return(0,a.jsx)("h2",{children:"Invalid Route"})}}}]);
-//# sourceMappingURL=341.cf728a29.chunk.js.map
