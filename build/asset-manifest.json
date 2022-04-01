@@ -1,26 +1,34 @@
 {
   "files": {
-    "main.css": "/AmadisTrainingReact/build/static/css/main.4ae9a251.css",
-    "main.js": "/AmadisTrainingReact/build/static/js/main.dd92d4df.js",
+    "main.css": "/AmadisTrainingReact/build/static/css/main.5cd11c20.css",
+    "main.js": "/AmadisTrainingReact/build/static/js/main.a7e854e6.js",
     "static/js/341.cf728a29.chunk.js": "/AmadisTrainingReact/build/static/js/341.cf728a29.chunk.js",
-    "static/js/13.8e42c0af.chunk.js": "/AmadisTrainingReact/build/static/js/13.8e42c0af.chunk.js",
-    "static/js/944.d50de1aa.chunk.js": "/AmadisTrainingReact/build/static/js/944.d50de1aa.chunk.js",
+    "static/js/13.431caf5c.chunk.js": "/AmadisTrainingReact/build/static/js/13.431caf5c.chunk.js",
+    "static/js/944.4f9651dc.chunk.js": "/AmadisTrainingReact/build/static/js/944.4f9651dc.chunk.js",
     "static/js/657.dd8fec8b.chunk.js": "/AmadisTrainingReact/build/static/js/657.dd8fec8b.chunk.js",
-    "static/js/167.d8569adb.chunk.js": "/AmadisTrainingReact/build/static/js/167.d8569adb.chunk.js",
+    "static/js/167.78ea2187.chunk.js": "/AmadisTrainingReact/build/static/js/167.78ea2187.chunk.js",
+    "static/css/222.90ac48cc.chunk.css": "/AmadisTrainingReact/build/static/css/222.90ac48cc.chunk.css",
+    "static/js/222.a904838c.chunk.js": "/AmadisTrainingReact/build/static/js/222.a904838c.chunk.js",
+    "static/js/726.9feff6c5.chunk.js": "/AmadisTrainingReact/build/static/js/726.9feff6c5.chunk.js",
     "static/js/787.bc334f00.chunk.js": "/AmadisTrainingReact/build/static/js/787.bc334f00.chunk.js",
+    "static/js/196.571d36d5.chunk.js": "/AmadisTrainingReact/build/static/js/196.571d36d5.chunk.js",
     "static/media/homeImg.png": "/AmadisTrainingReact/build/static/media/homeImg.a93e46c9133635d93ebd.png",
     "index.html": "/AmadisTrainingReact/build/index.html",
-    "main.4ae9a251.css.map": "/AmadisTrainingReact/build/static/css/main.4ae9a251.css.map",
-    "main.dd92d4df.js.map": "/AmadisTrainingReact/build/static/js/main.dd92d4df.js.map",
+    "main.5cd11c20.css.map": "/AmadisTrainingReact/build/static/css/main.5cd11c20.css.map",
+    "main.a7e854e6.js.map": "/AmadisTrainingReact/build/static/js/main.a7e854e6.js.map",
     "341.cf728a29.chunk.js.map": "/AmadisTrainingReact/build/static/js/341.cf728a29.chunk.js.map",
-    "13.8e42c0af.chunk.js.map": "/AmadisTrainingReact/build/static/js/13.8e42c0af.chunk.js.map",
-    "944.d50de1aa.chunk.js.map": "/AmadisTrainingReact/build/static/js/944.d50de1aa.chunk.js.map",
+    "13.431caf5c.chunk.js.map": "/AmadisTrainingReact/build/static/js/13.431caf5c.chunk.js.map",
+    "944.4f9651dc.chunk.js.map": "/AmadisTrainingReact/build/static/js/944.4f9651dc.chunk.js.map",
     "657.dd8fec8b.chunk.js.map": "/AmadisTrainingReact/build/static/js/657.dd8fec8b.chunk.js.map",
-    "167.d8569adb.chunk.js.map": "/AmadisTrainingReact/build/static/js/167.d8569adb.chunk.js.map",
-    "787.bc334f00.chunk.js.map": "/AmadisTrainingReact/build/static/js/787.bc334f00.chunk.js.map"
+    "167.78ea2187.chunk.js.map": "/AmadisTrainingReact/build/static/js/167.78ea2187.chunk.js.map",
+    "222.90ac48cc.chunk.css.map": "/AmadisTrainingReact/build/static/css/222.90ac48cc.chunk.css.map",
+    "222.a904838c.chunk.js.map": "/AmadisTrainingReact/build/static/js/222.a904838c.chunk.js.map",
+    "726.9feff6c5.chunk.js.map": "/AmadisTrainingReact/build/static/js/726.9feff6c5.chunk.js.map",
+    "787.bc334f00.chunk.js.map": "/AmadisTrainingReact/build/static/js/787.bc334f00.chunk.js.map",
+    "196.571d36d5.chunk.js.map": "/AmadisTrainingReact/build/static/js/196.571d36d5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4ae9a251.css",
-    "static/js/main.dd92d4df.js"
+    "static/css/main.5cd11c20.css",
+    "static/js/main.a7e854e6.js"
   ]
 }
