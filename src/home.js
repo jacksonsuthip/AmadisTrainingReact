@@ -7,7 +7,7 @@ function Home() {
 
     const menuItems = [
         { id: 1, key: "Crud/crudApp", displayName: "CRUD App" },
-        { id: 2, key: "log/registration", displayName: "Log In App" },
+        { id: 2, key: "log/registration", displayName: "LogIn App" },
     ];
 
     return (

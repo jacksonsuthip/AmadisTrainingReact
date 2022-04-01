@@ -1,10 +1,10 @@
 {
   "files": {
     "main.css": "/AmadisTrainingReact/build/static/css/main.5cd11c20.css",
-    "main.js": "/AmadisTrainingReact/build/static/js/main.a7e854e6.js",
+    "main.js": "/AmadisTrainingReact/build/static/js/main.10f6202f.js",
     "static/js/341.cf728a29.chunk.js": "/AmadisTrainingReact/build/static/js/341.cf728a29.chunk.js",
     "static/js/13.431caf5c.chunk.js": "/AmadisTrainingReact/build/static/js/13.431caf5c.chunk.js",
-    "static/js/944.4f9651dc.chunk.js": "/AmadisTrainingReact/build/static/js/944.4f9651dc.chunk.js",
+    "static/js/944.6432c751.chunk.js": "/AmadisTrainingReact/build/static/js/944.6432c751.chunk.js",
     "static/js/657.dd8fec8b.chunk.js": "/AmadisTrainingReact/build/static/js/657.dd8fec8b.chunk.js",
     "static/js/167.78ea2187.chunk.js": "/AmadisTrainingReact/build/static/js/167.78ea2187.chunk.js",
     "static/css/222.90ac48cc.chunk.css": "/AmadisTrainingReact/build/static/css/222.90ac48cc.chunk.css",
@@ -15,10 +15,10 @@
     "static/media/homeImg.png": "/AmadisTrainingReact/build/static/media/homeImg.a93e46c9133635d93ebd.png",
     "index.html": "/AmadisTrainingReact/build/index.html",
     "main.5cd11c20.css.map": "/AmadisTrainingReact/build/static/css/main.5cd11c20.css.map",
-    "main.a7e854e6.js.map": "/AmadisTrainingReact/build/static/js/main.a7e854e6.js.map",
+    "main.10f6202f.js.map": "/AmadisTrainingReact/build/static/js/main.10f6202f.js.map",
     "341.cf728a29.chunk.js.map": "/AmadisTrainingReact/build/static/js/341.cf728a29.chunk.js.map",
     "13.431caf5c.chunk.js.map": "/AmadisTrainingReact/build/static/js/13.431caf5c.chunk.js.map",
-    "944.4f9651dc.chunk.js.map": "/AmadisTrainingReact/build/static/js/944.4f9651dc.chunk.js.map",
+    "944.6432c751.chunk.js.map": "/AmadisTrainingReact/build/static/js/944.6432c751.chunk.js.map",
     "657.dd8fec8b.chunk.js.map": "/AmadisTrainingReact/build/static/js/657.dd8fec8b.chunk.js.map",
     "167.78ea2187.chunk.js.map": "/AmadisTrainingReact/build/static/js/167.78ea2187.chunk.js.map",
     "222.90ac48cc.chunk.css.map": "/AmadisTrainingReact/build/static/css/222.90ac48cc.chunk.css.map",
@@ -29,6 +29,6 @@
   },
   "entrypoints": [
     "static/css/main.5cd11c20.css",
-    "static/js/main.a7e854e6.js"
+    "static/js/main.10f6202f.js"
   ]
 }

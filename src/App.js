@@ -2,14 +2,15 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './loginPage/login.css';
 import React from 'react';
 import { HashRouter, Link, Outlet, Route, Routes } from 'react-router-dom';
-import CrudApp from './Crud/crudApp';
-import Home from './home';
-//import NonExistentRoute from './NonExistentRoute';
+//import CrudApp from './Crud/crudApp';
+//import Home from './home';
 const NonExistentRoute = React.lazy(() => import("./loginPage/NonExistentRoute"));
 const UserLogin = React.lazy(() => import("./loginPage/userLogin"));
 const DashBoard = React.lazy(() => import("./loginPage/dashboard"));
 const AllEmpDetail = React.lazy(() => import("./loginPage/allEmpDetail"));
 const Registration = React.lazy(() => import("./loginPage/registration"));
+const CrudApp = React.lazy(() => import("./Crud/crudApp"));
+const Home = React.lazy(() => import("./home"));
 
 function App() {
 
@@ -41,7 +42,7 @@ function App() {
             <React.Suspense fallback={<h2>Loading...</h2>}>
               <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
                 <div className="container">
-                  <span style={{ color: 'white', fontSize: '1.6rem' }}>Sign Up And Log In</span>
+                  <span style={{ color: 'white', fontSize: '1.6rem' }}>SignUp And LogIn</span>
                   <div className=" navbar-collapse ulDiv" id="navbarResponsive">
                     <ul className="navbar-nav">
                       {menuItems.map((menu, i) =>

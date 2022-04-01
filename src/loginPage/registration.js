@@ -1,5 +1,6 @@
 import React from 'react';
 import { useState, useEffect, useRef } from "react";
+import { Button, Modal } from 'react-bootstrap';
 
 function Registration() {
 
@@ -15,6 +16,8 @@ function Registration() {
     const focusName = useRef(null);
     const focusPassword = useRef(null);
     const focusUserName = useRef(null);
+    const [show, setShow] = useState(false);
+    const [alertValue, setAlert] = useState("");
 
     useEffect(() => {
         var getUserStore = JSON.parse(localStorage.getItem("user"));
@@ -42,13 +45,16 @@ function Registration() {
     const addEmployee = () => {
         var updateEmpList1 = JSON.parse(JSON.stringify(empList));
         if (empName === '') {
-            alert("Enter Name And continue");
+            setShow(true);
+            setAlert("Enter Name And Continue . . .");
             focusName.current.focus();
         } else if (empUserName === '') {
-            alert("Enter UserNmae And continue");
+            setAlert("Enter UserNmae And Continue . . .");
+            setShow(true);
             focusUserName.current.focus();
         } else if (empPassword === '') {
-            alert("Enter Password And continue");
+            setAlert("Enter Password And Continue . . .");
+            setShow(true);
             focusPassword.current.focus();
         } else {
             updateCount(count + 1)
@@ -79,6 +85,7 @@ function Registration() {
             val.username === (event.target.value) && userTrue(true)
         )
     }
+    const handleClose = () => setShow(false);
 
     return (
         <div className='container appReg'>
@@ -135,6 +142,15 @@ function Registration() {
             </div>
             <input type="hidden" value={count} />
             <p style={{ paddingBottom: '20px' }}></p>
+            <Modal show={show} onHide={handleClose}>
+                <Modal.Header><span className='MHead'>Alert</span></Modal.Header>
+                <Modal.Body><span className='MBody'>{alertValue}</span></Modal.Body>
+                <Modal.Footer>
+                    <Button variant="secondary" onClick={handleClose}>
+                        Ok
+                    </Button>
+                </Modal.Footer>
+            </Modal>
         </div>
     );
 }
