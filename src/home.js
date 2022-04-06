@@ -1,13 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './index.css';
-import  photo from './homeImg.png';
+import photo from './homeImg.png';
 
 function Home() {
 
     const menuItems = [
         { id: 1, key: "Crud/crudApp", displayName: "CRUD App" },
         { id: 2, key: "log/registration", displayName: "LogIn App" },
+        { id: 3, key: "rxjs/rxjsApp", displayName: "RxJS App" },
     ];
 
     return (
@@ -31,6 +32,7 @@ function Home() {
                 <div className='row'>
                     <div className='col-md-2'></div>
                     <div className='col-md-3 homeDiv1'>
+                        <p></p>
                         <span style={{ paddingLeft: '20px', fontSize: '23px' }}><b>React Task</b></span>
                         <hr />
                         <ul className="">

@@ -2,8 +2,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './loginPage/login.css';
 import React from 'react';
 import { HashRouter, Link, Outlet, Route, Routes } from 'react-router-dom';
-//import CrudApp from './Crud/crudApp';
-//import Home from './home';
+import RxJsApp from './RxJS/rxjsApp';
 const NonExistentRoute = React.lazy(() => import("./loginPage/NonExistentRoute"));
 const UserLogin = React.lazy(() => import("./loginPage/userLogin"));
 const DashBoard = React.lazy(() => import("./loginPage/dashboard"));
@@ -75,31 +74,33 @@ function App() {
             </React.Suspense>} />
           </Route>
 
-
-          {/* <Route path='registration' element={<React.Suspense fallback={<h2>Loading...</h2>}>
-            <Registration />
-          </React.Suspense>} />
-          <Route path='userLogin' element={<React.Suspense fallback={<h2>Loading...</h2>}>
-            <UserLogin />
-          </React.Suspense>} />
-          <Route path='dashboard' element={<React.Suspense fallback={<h2>Loading...</h2>}>
-            <DashBoard />
-          </React.Suspense>} />
-          <Route path=':id' element={<React.Suspense fallback={<h2>Loading...</h2>}>
-            <DashBoard />
-          </React.Suspense>} />
-          <Route path='allEmpDetail' element={<React.Suspense fallback={<h2>Loading...</h2>}>
-            <AllEmpDetail />
-          </React.Suspense>} /> */}
+          <Route path='rxjs' element={
+            <React.Suspense fallback={<h2>Loading...</h2>}>
+              <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div className="container">
+                  <span style={{ color: 'white', fontSize: '1.6rem' }}>RxJS App</span>
+                  <div className=" navbar-collapse ulDiv" id="navbarResponsive">
+                    <ul className="navbar-nav">
+                      <li className='nav-item mx-0 mx-lg-1'>
+                        <Link to={'/home'} className='li'>Home</Link>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+              <Outlet />
+            </React.Suspense>
+          }>
+            <Route path='rxjsApp' element={<RxJsApp />} />
+          </Route>
 
           <Route path='*' element={<React.Suspense fallback={<h2>Loading...</h2>}>
             <NonExistentRoute />
           </React.Suspense>} />
 
         </Routes>
-      </HashRouter>
-      {/* <p style={{ marginBottom: '120px' }}></p> */}
-    </div>
+      </HashRouter >
+    </div >
   );
 }
 export default App;
