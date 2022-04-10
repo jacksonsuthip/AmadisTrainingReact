@@ -1,10 +1,12 @@
 import { useEffect, useState } from "react";
 import { getTodo } from "./api";
-import { prodSubject } from "./subjectVal";
+import { prodSubject, removeSubject } from "./subjectVal";
+import './rxjs.css';
 
 function LeftSide() {
 
     const [todo, setTodo] = useState([]);
+    const [doneTodo, setDoneTodo] = useState([]);
 
     useEffect(() => {
         // make api call & set users
@@ -13,9 +15,41 @@ function LeftSide() {
                 setTodo(response);
             });
     }, []);
+    useEffect(() => {
+        var mTodo1 = JSON.parse(JSON.stringify(todo));
+        mTodo1.slice(0, 7).map((tod) => {
+            if (tod.completed) {
+                var mTodo = doneTodo;
+                mTodo.push(tod);
+                setDoneTodo(mTodo);
+                prodSubject.next(mTodo);
+            }
+        });
+    }, [todo]);
+    useEffect(() => {
+        removeSubject.subscribe(data1 => {
+            if (data1 !== undefined) {
+                setDoneTodo(data1);
+            }
+        });
+    }, [removeSubject])
 
-    function sendProductInfo(val) {
-        prodSubject.next(val);
+    function sendProductInfo(val, che) {
+        var mTodo = JSON.parse(JSON.stringify(doneTodo));
+        if (che === true) {
+            val.completed = true;
+            mTodo.push(val);
+            setDoneTodo(mTodo);
+            prodSubject.next(mTodo);
+        } else {
+            var userIndex = doneTodo.findIndex(doneT => doneT.id === val.id);
+            val.completed = false;
+            setDoneTodo(mTodo);
+            if (userIndex >= 0) {
+                mTodo.splice(userIndex, 1);
+                prodSubject.next(mTodo);
+            } 
+        }
     }
 
     return (
@@ -24,23 +58,25 @@ function LeftSide() {
             <table className='table table-hover table-bordered table-striped'>
                 <thead className='tabHed'>
                     <tr>
-                        <th>Id</th>
-                        <th>Title</th>
-                        <th></th>
+                        <th style={{ width: '10%' }}>Sl.No</th>
+                        <th style={{ width: '70%' }}>ToDo List</th>
+                        <th style={{ width: '20%' }}>Checkbox</th>
                     </tr>
                 </thead>
                 <tbody>
                     {
-                        todo.slice(0, 7).map((emp, i) =>
-                            <tr key={"keyName" + i}>
-                                <td>{emp.id}</td>
-                                <td>{emp.title}</td>
-                                <td><button type="button" className='btn1' onClick={() => sendProductInfo(emp)}>Add</button></td>
+                        todo.slice(0, 7).map((ttdd, i) =>
+                            <tr key={"keyName" + i} className={ttdd.completed === true ? "lin" : null}>
+                                <td>{ttdd.id}</td>
+                                <td>{ttdd.title}</td>
+                                <td><input type="checkbox"
+                                    checked={ttdd.completed}
+                                    onChange={e => sendProductInfo(ttdd, e.target.checked)}
+                                /></td>
                             </tr>
                         )
                     }
                 </tbody>
-
             </table>
         </div>
     );
