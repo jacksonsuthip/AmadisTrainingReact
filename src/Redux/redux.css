@@ -1,0 +1,21 @@
+.lin{
+    text-decoration: line-through;
+    font-weight: 500;
+}
+.reduxDiv{
+    border-radius: 10px;
+    box-shadow: 0px 0px 25px 0px #6e6666;
+    background-color: white;
+}
+.btn2{
+    border-radius: 10px;
+    border: 2px solid #ff0000;
+    background-color: #fc0000;
+  }  
+.btn2:hover{
+    border: 2px solid #ff0000;
+    background-color: transparent;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+  }

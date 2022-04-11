@@ -3,6 +3,7 @@ import './loginPage/login.css';
 import React from 'react';
 import { HashRouter, Link, Outlet, Route, Routes } from 'react-router-dom';
 import RxJsApp from './RxJS/rxjsApp';
+const ReduxProviderComp = React.lazy(() => import('./Redux/providerComo'));
 const NonExistentRoute = React.lazy(() => import("./loginPage/NonExistentRoute"));
 const UserLogin = React.lazy(() => import("./loginPage/userLogin"));
 const DashBoard = React.lazy(() => import("./loginPage/dashboard"));
@@ -89,9 +90,17 @@ function App() {
                 </div>
               </nav>
               <Outlet />
-            </React.Suspense>
-          }>
+            </React.Suspense>}>
             <Route path='rxjsApp' element={<RxJsApp />} />
+          </Route>
+
+          <Route path='redux' element={
+            <React.Suspense fallback={<h2>Loading...</h2>}>
+              <Outlet />
+            </React.Suspense>}>
+              <Route path='reduxApp' element={<React.Suspense fallback={<h2>Loading...</h2>}>
+                <ReduxProviderComp />
+              </React.Suspense>} />
           </Route>
 
           <Route path='*' element={<React.Suspense fallback={<h2>Loading...</h2>}>

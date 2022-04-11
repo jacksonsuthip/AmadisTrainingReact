@@ -41,6 +41,7 @@ function LeftSide() {
             mTodo.push(val);
             setDoneTodo(mTodo);
             prodSubject.next(mTodo);
+            console.log(che);
         } else {
             var userIndex = doneTodo.findIndex(doneT => doneT.id === val.id);
             val.completed = false;

@@ -9,6 +9,7 @@ function Home() {
         { id: 1, key: "Crud/crudApp", displayName: "CRUD App" },
         { id: 2, key: "log/registration", displayName: "LogIn App" },
         { id: 3, key: "rxjs/rxjsApp", displayName: "RxJS App" },
+        { id: 4, key: "redux/reduxApp", displayName: "Redux App" },
     ];
 
     return (
